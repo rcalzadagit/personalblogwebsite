@@ -1,0 +1,90 @@
+body {
+    margin: 0%;
+    background-color: #444;
+    font-size: 20px;
+    /* color: #fffff8; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.h3 {
+    color: #222831;
+}
+.container{
+    display: grid;
+    width: 100%;
+    margin: 0%;
+    /* grid-gap: 20px; */
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 45vh 45vh 35vh;
+    grid-template-areas:
+    "top top"
+    "bottomLeft bottomRight"
+    "bottom  bottom";
+    border: 2px solid green;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    /* align-items: stretch; */
+    justify-content: center;
+    border: 1px solid red;
+    padding: 10px;
+    
+}
+
+
+
+
+
+
+#one{
+grid-area: top;
+/* order: 1; */
+background-image:url('../images/code-to-code.png');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+
+
+}
+#two{ 
+grid-area: bottomLeft;
+/* order: 2; */
+background-color: #ffff;
+
+
+
+}
+#three{
+grid-area: bottomRight;
+background-color: #ffff;
+}
+#four{
+    grid-area: bottom;
+    background-color: #8fdef1;
+
+}
+
+
+
+.copy-wright{
+    position: relative;
+    text-align: center;
+    /* margin-top: 50px; */
+    padding: 80px;
+    color: #fff;
+    /* font-weight: 300; */
+    /* size: 16px; */
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+

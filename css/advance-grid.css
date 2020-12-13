@@ -1,0 +1,156 @@
+body {
+    margin: 0%;
+    background-color: #444;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 420px;
+    /* grid-template-columns: 850px; */
+    grid-template-rows: 250px 1fr 1fr;
+    grid-template-areas: 
+    "hd"
+    "sd"
+    "main"
+    "ft";
+    border: 3px solid blue;
+}
+/* Medium Screens. optional: and (max-width: 1100px)*/
+@media(min-width: 600px) and (max-width: 1100px) {
+.container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 150px; */
+    grid-template-columns: 300px 300px;
+    /* grid-template-columns: 30px repeat(7, 1fr); */
+    /* grid-template-rows: 70px 400px 1fr; */
+    grid-template-rows: 250px 600px 80px;
+    
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "sd sd sd sd main main main main"
+    "ft ft ft ft ft ft ft ft";
+    border: 3px solid yellow;
+    }
+}
+/* Large Screens*/
+@media (min-width: 1101px){
+    .container {
+        border: 3px solid green;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "sd sd sd main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+}
+
+.box{
+    /* border: 1px solid red; */
+ 
+    /* background-color: #ec524b;  */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* align-items: stretch; */
+    /* align-items: flex-start; */
+    justify-content: space-evenly;
+    /* justify-content: space-around; */
+    
+    
+
+}
+
+.header{
+    grid-area: hd;
+    background-image:url('../images/code-to-code.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.content{
+    grid-area: main;
+ 
+}
+.sidebar{
+    grid-area: sd;
+    
+}
+.footer {
+    grid-area: ft;
+   
+}
+/* #one{
+    order: 1;
+}
+#two{
+    order: 3;
+}
+#three{
+    order: 2;
+} */
+
+#one{
+    /* background-image:url('../images/code-to-code.png');  */
+    /* height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; */
+    
+}
+#two{
+    background-color: #ffff;
+    padding: 20px 20px 20px 20px;
+   
+    
+}
+#three{
+    background-color: rgb(40, 99, 228);
+    padding: 20px 20px 20px 20px;
+    
+}
+#four{
+    background-color: #8fdef1;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+}
+  
+.links{
+    margin: 10px;
+    text-align: center;
+
+ 
+}
+
+p {
+    margin-top: 5px;
+    size: 19px;
+}
+
+
+a {
+    
+    size: 19px;
+    text-decoration: none;
+    padding: 5px;
+    color:#fff;
+    /* font-family: "Ubuntu"; */
+  
+}
+
+.social-icons{
+    color: blue;
+}
+.social-icons:hover{
+    color: rgb(245, 162, 38);
+}
+
+.copy-wright{
+    color:#fff;
+    padding-top: 20px;
+}
+
