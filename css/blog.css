@@ -162,6 +162,11 @@ a {
     /* font-family: "Ubuntu"; */
   
 }
+
+.card{ 
+    width: 18rem;
+}
+
 .my-pages{
     padding-top: 20px;
 }
