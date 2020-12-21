@@ -1,3 +1,5 @@
+@import "cards.css";
+@import "footer.css";
 @import "blog.css";
 body {
     margin: 0%;
@@ -143,15 +145,5 @@ a {
   
 }
 
-.social-icons{
-    color: blue;
-}
-.social-icons:hover{
-    color: rgb(245, 162, 38);
-}
 
-.copy-wright{
-    color:#fff;
-    padding-top: 20px;
-}
 
